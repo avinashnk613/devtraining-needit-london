@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_sub_flow_instance">
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Find and Close Long Overdue Needit Tasks">8b5308fd375033006daf097973990e54</flow>
+        <inputs/>
+        <inputs/>
+        <order>4.1</order>
+        <parent_ui_id>2284d908-8eb6-49e6-86b2-422ef97d27ad</parent_ui_id>
+        <subflow display_value="Handle Overdue NeedIt Tasks">d4d04cfd375033006daf097973990e63</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-20 11:55:34</sys_created_on>
+        <sys_id>7b4588b1379033006daf097973990e0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_sub_flow_instance_7b4588b1379033006daf097973990e0b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-20 11:55:34</sys_updated_on>
+        <ui_id>d07eb20a-29b7-4ab5-8af4-01e687dc1e31</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7b4588b1379033006daf097973990e0b"/>
+    <sys_element_mapping action="delete_multiple" query="id=7b4588b1379033006daf097973990e0b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>needit_task</field>
+        <id>7b4588b1379033006daf097973990e0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-20 11:55:34</sys_created_on>
+        <sys_id>f74588b1379033006daf097973990e11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-20 11:55:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_d4d04cfd375033006daf097973990e63</table>
+        <value>{{2284d908-8eb6-49e6-86b2-422ef97d27ad.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>reason</field>
+        <id>7b4588b1379033006daf097973990e0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-20 11:55:34</sys_created_on>
+        <sys_id>374588b1379033006daf097973990e11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-20 11:55:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_d4d04cfd375033006daf097973990e63</table>
+        <value>Needit Task {{2284d908-8eb6-49e6-86b2-422ef97d27ad.item.number}}  was automatically closed because its Due date of {{2284d908-8eb6-49e6-86b2-422ef97d27ad.item.due_date}} was older than  the autoCloseOverdue settings of  {{8f49747d-1cc2-4bd0-ab3a-9f12f5f1f43c.property_value}} days.</value>
+    </sys_element_mapping>
+</record_update>
